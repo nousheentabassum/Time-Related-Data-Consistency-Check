@@ -1,11 +1,11 @@
 # Time-Related Data Consistency Check
 
-## 📌 Objective
+##  Objective
 Evaluate the reliability of year-related fields in an 
 Insurance Agency Performance dataset by performing 
 systematic data quality checks.
 
-## 📂 Dataset
+##  Dataset
 - **File:** finalapi.csv
 - **Domain:** Insurance Agency Performance
 - **Total Records:** 2,13,328 rows
@@ -13,7 +13,7 @@ systematic data quality checks.
 - **Year-Related Columns:** 10 columns
 - **Analysis Period:** 2005 – 2015
 
-## 🛠️ Tools & Libraries
+##  Tools & Libraries
 | Tool | Purpose |
 |------|---------|
 | Python | Programming language |
@@ -22,7 +22,7 @@ systematic data quality checks.
 | Matplotlib | Visualizations |
 | Seaborn | Statistical charts |
 
-## 📋 Tasks Performed
+##  Tasks Performed
 
 ### Task 1 — Identify Year Columns
 - Programmatically detected all 10 year-related columns
@@ -48,11 +48,11 @@ systematic data quality checks.
 - Bar chart: Record count by year
 - Line chart: Trend of records over years
 
-## 🧹 Data Cleaning Steps
+##  Data Cleaning Steps
 1. Replaced **99999 placeholder values** with NaN
 2. Filled NaN with **column mean** to preserve all rows
 
-## 📊 Key Findings
+##  Key Findings
 - 10 year-related columns found out of 49 total
 - 99999 used as placeholder — over 2,09,000 fake values in some columns
 - 6 out of 10 year columns have 70–90% missing — unreliable
@@ -60,23 +60,23 @@ systematic data quality checks.
 - Logical inconsistencies checked across all 4 start-end pairs
 - After cleaning, dataset is ready for time-series analysis
 
-## 📈 Visualizations
+##  Visualizations
 ![Bar Chart](bar_chart.png)
 ![Line Chart](line_chart.png)
 
-## ✅ Conclusion
+##  Conclusion
 The time-related fields in this dataset suffer from 
 significant quality issues. However, STAT_PROFILE_DATE_YEAR 
 stands out as the only fully reliable field suitable for 
 time-series analysis.
 
-## 💡 Recommendations
+##  Recommendations
 - Stop using 99999 as placeholder — use NULL instead
 - Enforce validation: end year must always be ≥ start year
 - Drop columns with >80% missing for modeling purposes
 - Use STAT_PROFILE_DATE_YEAR as primary time dimension
   
-## 👩‍💻 Author
+##  Author
 **Nousheen Tabassum**  
 B.E in Computer Science and Engineering  
 CBIT — Cybersecurity, IoT and Blockchain Technology
